@@ -37,4 +37,5 @@ https://www.kaggle.com/c/data-science-bowl-2017/kernels
     * 3D CNN's for classification were created for training on DSB data predicted by 2D/3D U-Net's. Ones for 2D predicitions are called preds2d_* and for 3D predictions preds3d. Expriments with various classifier architectures are in 2 jupyter notebooks.
     Those models did not give good validation results, probably due to resizing of whole lungs, which caused the most important features such as nodules to be lost or significantly reduced.
     * 2D CNN was also created to be trained on 2D U-Net predictions without resizing, so it is fed with slices one by one, where each slice for a patient with cancer is labeled with 1 and without cancer with 0.
-    Performance not yet checked.
+    Did not perform well.
+    Features were extracted from 2D CNN classifier which did not perform well by itself. An XGBoost model was trained and optimized on extracted features. Validated on patients 1500-1595 it achieved a logloss of 0.55.
