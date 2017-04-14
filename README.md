@@ -2,6 +2,7 @@
 
 Many thanks to all the authors of kernels which enormously helped with data processing, especially at the beginning!
 Some functions are based on the kernels by Guido Zuidhof, ArnavJain, Ankasor, Bohdan Pavlyshenko.
+my_PreProc function by: https://github.com/orobix/retina-unet.
 
 https://www.kaggle.com/c/data-science-bowl-2017/kernels
 
